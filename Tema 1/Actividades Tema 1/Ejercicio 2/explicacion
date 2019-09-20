@@ -1,0 +1,2 @@
+En firefox podemos deshabilitar javascript entrando en about:config y despues
+buscando javascript.enable y poniendolo en false

@@ -1,0 +1,3 @@
+En HTML5 ponemos los videos y audio con la etiqueta
+<video> o <audio>
+los mas utilizados en cuanto a codecs son mp4, webm,ogg,mp3 y gif entre otros

@@ -1,0 +1,65 @@
+1. Señale la respuesta correcta con
+respecto a las características de un
+navegador web:
+a) No pueden realizar peticiones al
+servidor sin intervención directa
+del usuario
+b) Todos los navegadores web
+actuales son gratuitos
+c) Todos los navegadores actuales
+soportan la ejecución de
+JavaScript
+d) No pueden almacenar ningún
+tipo de dato relacionado con la
+navegación del cliente
+
+La correcta es la C
+
+2. ¿Cuál de los siguientes módulos no
+forma parte de la arquitectura de
+referencia de un navegador web?
+a) Módulo de gestión de
+usuarios
+b) Módulo de persistencia de
+datos
+c) Módulo de comunicaciones
+d) Motor de renderizado
+ 
+La correcta es la A
+
+
+3. Señale la respuesta correcta con
+respecto a las características de XHTML:
+a) Al igual que HTML, no tiene por
+qué estar bien construido para
+que sea válido
+b) Es la unión de los principios de
+XML con el lenguaje HTML
+c) No permite la inclusión de código
+JavaScript
+d) Ninguna de las anteriores
+
+La correcta es la B
+
+4. Señale la respuesta correcta respecto
+a JavaScript:
+a) No está soportado por ninguno
+de los navegadores
+b) Es un estándar que indica la
+forma en la que un servidor debe
+ejecutar un programa externo.
+c) No se puede utilizar para
+programar applets.
+d) Se puede utilizar para programar
+Flash. 
+
+La correcta es la C
+
+5. ¿Cuál de los siguientes fragmentos de código sería correcto para integrar código
+JavaScript en HTML?
+a) <h1 onclick="<script> alert("Prueba de JavaScript");</script>">
+b) <script type="text" src="/inc/mensaje.js"></script>
+c) <h1 src="/inc/mensaje.js>Mensaje</h1>
+d) Ninguna de las anteriores 
+
+La correcta es la B
