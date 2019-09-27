@@ -62,4 +62,4 @@ b) <script type="text" src="/inc/mensaje.js"></script>
 c) <h1 src="/inc/mensaje.js>Mensaje</h1>
 d) Ninguna de las anteriores 
 
-La correcta es la B
+La correcta es la D

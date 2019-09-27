@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+    var prim =prompt("Dame el primer numero");
+    var seg =prompt("Dame el segundo numero");
+    var uno = parseInt(prim);
+    var dos = parseInt(seg);
+    var i;
+    var dev="";
+
+    if (dos>uno){
+     for (i= uno; i <= dos; i++) {
+         if(i%8==0)
+         dev=dev+ i+ " ";         
+     }
+     alert(dev);
+    }else if (uno>dos){
+     for (i= dos; i <= uno; i++) {
+         if(i%8==0)
+         dev=dev+ i+ " ";         
+     }
+     alert(dev);
+    }else if (uno==dos){
+        alert("los numero no pueden ser iguales");
+    }
+
+    
+    </script>
+    
+</body>
+</html>

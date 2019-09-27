@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var ped = prompt("Dame tu DNI separando los numeros y la letra con un guion");
+        var sep = ped.split("-");
+        var numero = parseInt(sep[0])
+        var cadena = ["T", "R", "W", "A", "G", "M", "Y", "F", "P", "D", "X", "B", "N", "J", "Z", "S", "Q", "V", "H", "L", "C", "K", "E", "T"];
+        var ent = sep[1].toUpperCase;
+
+        if (numero > 0 && numero <= 99999999) {
+
+            var posicion = numero % 23;
+            var letra = cadena[posicion];
+            if (!letra == ent) {
+                alert("La letra que has indicado no es la del numero correspondiente")
+            } else {
+                alert(numero + " - " + letra);
+            }
+
+        } else {
+            alert("El numero tiene que ser mayor que 0 y menor que 99999999")
+        }
+
+
+
+
+    </script>
+    
+</body>
+</html>

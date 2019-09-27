@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+    var array = prompt("Introduce una frase");
+    var regex_numeros = /^[0-9]+$/;
+
+    for (let i = 0; i < array.length; i++) {
+        if ((!regex_numeros.test(array.charAt(i)) && array.charAt(i)!=" " )) {       
+            alert(array.charAt(i));}
+    }
+   
+    
+
+        
+    
+    
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        var pro = prompt("¿Que nota ha obtenido el alumno?");
+        var nota = parseInt(pro);
+        var dev = "";
+        
+
+
+        /* 
+        nota < 5 && nota >= 0 ? dev = "suspenso" : nota >= 5 && nota < 7 ? dev = "aprobado" : nota >= 7 && nota < 9 ? dev = "notable" : nota >= 9 && nota <= 10 ? dev = "Sobresaliente" : dev = "me tienes que dar un numero entre 0 y 10";
+        alert(dev);
+        */
+
+        switch (true) {
+            case (nota < 5 && nota >= 0):
+                alert("Suspenso");
+                break;
+            case (nota == 5):
+                alert("Aprobado");
+                break
+            case (nota == 6):
+                alert("Bien");
+                break
+            case (nota == 7):
+                alert("Notable")
+                break
+            case (nota == 8):
+                alert("Notable")
+                break
+            case (nota == 9 || nota == 10):
+                alert("Sobresaliente");
+                break
+            default:
+                alert("Numero no valido, dame un numero entre 0 y 10")
+                break;
+        }
+    </script>
+
+</body>
+
+</html>
