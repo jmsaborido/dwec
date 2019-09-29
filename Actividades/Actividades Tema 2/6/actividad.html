@@ -12,16 +12,16 @@
         var sep = ped.split("-");
         var numero = parseInt(sep[0])
         var cadena = ["T", "R", "W", "A", "G", "M", "Y", "F", "P", "D", "X", "B", "N", "J", "Z", "S", "Q", "V", "H", "L", "C", "K", "E", "T"];
-        var ent = sep[1].toUpperCase;
+        var ent = sep[1];
 
         if (numero > 0 && numero <= 99999999) {
 
             var posicion = numero % 23;
             var letra = cadena[posicion];
-            if (!letra == ent) {
-                alert("La letra que has indicado no es la del numero correspondiente")
+            if (letra == ent) {
+                alert(numero + "-" + letra);
             } else {
-                alert(numero + " - " + letra);
+                alert("La letra que has indicado no es la del numero correspondiente");
             }
 
         } else {

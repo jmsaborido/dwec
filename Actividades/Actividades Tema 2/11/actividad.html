@@ -14,17 +14,27 @@
         var numeros = 0;
         var arr = array.split(".");
 
-        /*for (let i = 0; i < array.length; i++) {
-            numeros+=parseInt(array.charAt(i))
-        }*/
-        // alert(numeros);
+        var a1 =prompt("¿Que condicion quieres? (1 ó 2)")
+        var bol;
+        a1==1?bol =true:bol=false;
 
+        if (a1==1 || a1==2){
         for (let i = 0; i < arr.length; i++) {
-            for (let j = 0; index < arr[i].length; j++) {
-                numeros += parseInt(arr[i].charAt(j))
+            for (let j = 0; j < arr[i].length; j++) {
+                numeros= numeros + parseInt(arr[i].charAt(j))
             }
-            alert(numeros);
-            numeros = 0;
+            if (bol){
+            alert("La suma entera es: " + numeros )
+            break;
+            }else {
+                if (i==arr.length-1){
+                    alert("La suma de todos los numeros es: " + numeros)
+                }               
+            }
+        }
+        }else{
+            alert("No me has dado una modificacion valida (1 ó 2)")
+
         }
 
     </script>
