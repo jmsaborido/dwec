@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="script.js" type="text/javascript" defer></script>
+</head>
+
+<body onload="hora()">
+    <p>4. Desarrolla una aplicación web que funcione de alarma. Ésta tendrá que mostrar la hora actual y
+        preguntar al usuario la hora que quiere que te avise. Una vez que llegue a la hora introducida por el
+        usuario, debe preguntarle si quiere descansar un poco más y vuelva a mostrar el mensaje a los dos
+        minutos. </p>
+    <form id="formulario" method="Post">
+        <label>¿A qué hora y minuto quieres la alarma?</label>
+        <input type="text" id="buscar" />
+        <input type="button" name="enviar" value="Enviar" onclick="recibir()" />
+        <p id="hora"></p>
+        <p id="mensajes"></p>
+    </form>
+</body>
+</html>

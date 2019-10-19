@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="script.js" type="text/javascript" defer async></script>
+</head>
+
+<body>
+    <p>2. Crea un buscador para que tus visitantes puedan encontrar un texto cualquiera en tus páginas.
+        Pide al usuario que introduzca la cadena a buscar. Una vez hallado, pregunta si se desea
+        continuar la búsqueda y repite el proceso hasta que se le diga que pare o no encuentre más
+        coincidencias.
+        Modifícalo para que solo busque palabras completas.
+        Modifícalo para que distinga entre mayúsculas y minúsculas
+        Comprueba que le método existe en el navegador, en caso contrario, avisa al usuario.</p>
+    <form id="formulario" method="Post">
+        <label>Texto a buscar</label>
+        <input type="text" id="buscar" />
+        <input type="button" name="enviar" value="Enviar" onclick="recibir();" />
+        <label>Buscar solo palabras completas </label>
+        <input type="checkbox" id="compl"  >
+        <label>Distinguir entre mayusculas y minusculas </label>
+        <input type="checkbox" id="mayus"  >
+    <p id="insertar"></p>
+    <p id="parrafo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in enim neque. Nulla maximus tincidunt
+        erat, in iaculis dui elementum ut. Morbi nibh augue, condimentum nec elit eu, consequat vestibulum lectus.
+        Vivamus dignissim blandit neque sed ornare. Donec tortor ipsum, condimentum sit amet porta fermentum, convallis
+        eu tellus. Curabitur in orci eu nunc scelerisque blandit. Integer porttitor condimentum felis, in volutpat justo
+        eleifend a. Ut imperdiet vulputate arcu, a tempus turpis ornare nec. Etiam luctus elit felis, id aliquam nisi
+        pulvinar et.
+
+        Maecenas ac massa eleifend, aliquet ipsum non, feugiat sem. In hac habitasse platea dictumst. Mauris non
+        sagittis sem. Pellentesque purus felis, efficitur id consequat quis, imperdiet sed massa. Mauris sagittis elit a
+        sapien mollis vulputate. Etiam vel ligula eget orci iaculis iaculis. Sed lobortis nec eros eget condimentum.
+        Etiam orci mauris, porta at metus id, dapibus vulputate libero. Mauris iaculis at arcu sed egestas. Nulla non
+        metus maximus, volutpat metus non, varius mauris. Donec luctus scelerisque lacus. Proin pulvinar mollis eros sed
+        blandit.
+
+        Nullam efficitur, lacus id maximus aliquam, ante arcu consectetur eros, et mollis sem risus ac tortor. Mauris
+        enim erat, aliquet hendrerit justo id, porta convallis ligula. Donec malesuada urna eget gravida gravida. Donec
+        cursus interdum molestie. Mauris non aliquam lorem. Pellentesque eget pharetra ante. In facilisis lacinia
+        ultrices. Pellentesque tempus vehicula mi at aliquam. Morbi volutpat lectus vel metus hendrerit, id mollis
+        ligula pretium. Aenean vehicula volutpat cursus. Class aptent taciti sociosqu ad litora torquent per conubia
+        nostra, per inceptos himenaeos. Nullam aliquet purus ac dignissim placerat. Aliquam vehicula libero sit amet
+        felis condimentum interdum. Proin sagittis auctor sem eu maximus. Duis volutpat vitae justo sit amet tempor.
+
+        Etiam maximus auctor sem ut elementum. Nam malesuada eget massa vel convallis. Vivamus luctus ex non ipsum
+        pulvinar, vitae sagittis dolor pretium. Nunc in felis at massa porttitor scelerisque. Vestibulum sit amet tortor
+        mi. Maecenas eu pulvinar justo. Sed quis nulla vehicula, maximus nibh in, vehicula ligula.
+
+        Aliquam consequat sagittis congue. Duis fringilla cursus nibh sit amet placerat. Vestibulum ante ipsum primis in
+        faucibus orci luctus et ultrices posuere cubilia Curae; Donec maximus vitae est et aliquam. Duis pulvinar
+        euismod tortor ut tincidunt. Etiam a metus ac orci feugiat dapibus maximus non dui. Curabitur eleifend risus mi,
+        at viverra lorem sollicitudin vel. Curabitur ultrices pretium viverra. Nunc diam risus, interdum eu luctus eget,
+        tempus in sapien. Etiam ac erat eget diam mollis tincidunt.</p>
+    </form>
+</body>
+
+</html>

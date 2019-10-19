@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="script.js" type="text/javascript" defer></script>
+</head>
+
+<body>
+    <p>27. Modificar los ejercicios 24,25 y 26 para que el patrón buscado lo pueda decidir el usuario en
+            tiempo de ejecución</p>
+    <form id="formulario" method="Post">
+        <label>texto</label>
+        <input type="text" id="texto" />
+        <label>fragmento a buscar</label>
+        <input type="text" id="buscar" />
+        <label>opcion</label>
+        <input type="text" id="opc" size="10" />
+        <input type="button" name="enviar" value="Enviar" onclick="recibir();" />
+    </form>
+    <p>Opciones: <br>1 = La cadena empieza por el valor indicado <br> 2 = La cadena termina por el valor indicado <br> 3
+        = La cadena ni termina ni empieza por el valor indicado</p>
+    <p id="insertar"></p>
+</body>
+
+</html>
