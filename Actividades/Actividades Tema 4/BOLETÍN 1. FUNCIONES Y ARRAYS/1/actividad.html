@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="script.js" type="text/javascript" defer></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <label>Convertir de base 10 a base X</label>
+    <form>
+        <label> Introduzca un numero en base 10</label>
+        <a><input type="text" id="numero"></a>
+        <br>
+        <label> Introduzca una base entre 2 y 36</label>
+        <a><input type="text" id="base"></a>
+        <a><input type="button" id="button" onclick="convertir1();" value="Convertir"></a>
+        <p id="enviar"></p>
+    </form>
+    <label>Convertir de base X a base 10</label>
+    <form>
+        <label> Introduzca un numero </label>
+        <a><input type="text" id="numero2"></a>
+        <br>
+        <label> Introduzca la base en la que se encuentra</label>
+        <a><input type="text" id="base2"></a>
+        <a><input type="button" id="button2" onclick="convertir2();"value="Convertir"></a>
+        <p id="enviar2"></p>
+    </form>
+    <p id="insertar"></p>
+
+</body>
+</html>

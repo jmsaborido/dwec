@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="script.js" type="text/javascript" defer></script>
+</head>
+
+<body>
+    <form>
+        <label for="valor">Valor: </label>
+        <input id="valor" type="number" value="0" name="valor"><br>
+        <label for="impuesto">Tipo de impuesto: </label>
+        <select id="impuesto" name="impuesto">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select><br>
+        <input type="button" name="Calcular" value="Calcular"
+            onclick="obtenerImporteConImpuestos(document.forms[0].elements[0].value, document.forms[0].elements[1].value)">
+    </form>
+    <p id="enviar"></p>
+
+</body>
+
+</html>

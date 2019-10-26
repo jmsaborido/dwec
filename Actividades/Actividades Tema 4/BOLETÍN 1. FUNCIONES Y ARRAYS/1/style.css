@@ -1,0 +1,41 @@
+
+body{
+    background-color: cyan;
+    font-family: sans-serif;
+
+}
+a {
+    display: inline-block;
+    height: 50px; 
+    transition: all 0.8s; 
+    padding-left: 20px; 
+    padding-right: 20px; 
+    line-height: 50px; 
+}
+a:hover {
+    background: tomato; 
+}
+#insertar{
+   color: red;
+}
+n {
+    display: inline-block;
+    height: 25px; 
+    background: cyan; 
+    transition: all 0.8s; 
+    line-height: 25px; 
+}
+n:hover {
+    background: greenyellow; 
+}
+c {
+    display: inline-block;
+    height: 25px; 
+    background: cyan; 
+    transition: all 0.8s; 
+    line-height: 25px; 
+}
+c:hover {
+    background: blueviolet; 
+}
+
