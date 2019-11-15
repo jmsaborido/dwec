@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="script.js" type="text/javascript" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form action="" method="GET" id="form">
+        <fieldset>
+            <legend>Datos personales</legend>
+            <p>Introduce tu nombre <input type="text" name="nombre" id="nombre"></p>
+            <p>Mensaje </p>
+            <textarea id="textA" rows="10" cols="100"></textarea>
+        </fieldset>
+        <br>
+        <label>Elige un color: </label><br>
+        <label>Rojo</label>
+        <input type="radio" name="color" id="rojo" value="#FF0000" />
+        <br>
+        <label>Verde</label>
+        <input type="radio" name="color" id="verde" value="#00FF00" />
+        <br>
+        <label>Azul</label>
+        <input type="radio" name="color" id="azul" value="#0000FF" />
+        <br>
+        <label>Oscuro</label>
+        <input type="radio" name="color" id="oscuro" value="#121212" />
+        <br>
+        <br>
+        <label>Selecciona una asignatura</label>
+        <select id="asignaturas">
+            <option>DWES</option>
+            <option>DWEC</option>
+            <option>DIW</option>
+            <option>DAW</option>
+        </select>
+        <br>
+        <br>
+        <label>Selecciona los días con disponibilidad</label><br>
+        <input type="checkbox" name="dia" id="lunes" value="lunes" /> Lunes<br>
+        <input type="checkbox" name="dia" id="martes" value="martes" /> Martes<br>
+        <input type="checkbox" name="dia" id="miercoles" value="miercoles" />Miércoles<br>
+        <input type="checkbox" name="dia" id="jueves" value="jueves" /> Jueves<br>
+        <input type="checkbox" name="dia" id="viernes" value="viernes" /> Viernes<br>
+        <br>
+        <label>Selecciona el día preferente</label>
+        <select id="preferente">
+            <option value="lunes"> Lunes</option>
+            <option value="martes"> Martes</option>
+            <option value="miercoles">Miércoles</option>
+            <option value="jueves"> Jueves</option>
+            <option value="viernes"> Viernes</option>
+        </select>
+        <br>
+        <br>
+        <input type="submit" id="submit" value="Haz clic para enviar información" />
+        <input type="reset" value="Comenzar a rellenar de nuevo" />
+        <input type="button" id="google" value="Haz clic sobre mí" />
+    </form>
+</body>
+
+</html>

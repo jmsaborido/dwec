@@ -1,0 +1,14 @@
+body{
+    font-family: 'Roboto Slab', serif;
+    color: #f0f0f0;
+    background-color: #121212;
+}
+#caja {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            color: red;
+            top: 0px;
+            left: 0px;
+            border-style: solid;
+}
