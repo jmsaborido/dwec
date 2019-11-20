@@ -1,0 +1,102 @@
+7. Realice un estudio de cuáles pueden ser los problemas que generan las cookies en una
+aplicación web. Busque en Internet qué alternativas existen para abordar la
+funcionalidad de los cookies. Concluya si la tendencia es utilizar las cookies o si son otras
+tecnologías las que se están tendiendo a utilizar.
+
+Robo de cookies: 
+
+    Si se usan cookies mediante HTTP, estas son visibles a todos los usuarios que pueden
+    escuchar en la red utilizando un sniffer de paquetes. Esto es un problema debido a que 
+    e las cookies tienen la posibilidad de ser portadoras de
+    información sensible (nombre de usuario, un testigo utilizado como autenticación, etc.)
+
+Identificación inexacta:
+
+    Las cookies no identifican a una persona, sino a una combinación de cuenta de
+    usuario, ordenador y navegador. De esta manera, cualquiera que utilice varias
+    cuentas, varios ordenadores, o varios navegadores, tiene también múltiples
+    conjuntos de cookies.
+
+Cookies entre sitios (cross-site cooking):
+
+    Cada sitio debe tener sus propias cookies, de forma que un sitio
+    no tenga posibilidad de modificar o definir cookies de otro sitio . Sin embargo, hay
+    una serie de vulnerabilidades conocidas como cross-site cooking (Cookies entre sitios)
+    El objetivo de estos ataques puede ser realizar 
+    una fijación de sesión (robo de sesión en un sitio web).
+
+Falsificación de cookies:
+
+    Las cookies deben ser almacenadas y enviadas de vuelta al servidor sin modificar;
+    sin embargo existe la posibilidad de que un atacante pueda modificar el valor
+    de las cookies antes de devolverlas. Es decir, si una cookie contiene el valor 
+    total de la compra de un usuario en un sitio web, cambiando ese valor el servidor 
+    podría permitir al atacante pagar menos de lo debido por su compra. 
+
+Alternativas:
+
+    Cadenas de consulta
+    Su funcionamiento es similar a la cookie en el sentido de que es el servidor web el que los genera y el navegador 
+    devuelve la información correspondiente.puede darse el caso que un mismo usuario emplee varios enlaces,
+    de manera que las estadísticas derivadas son menos fiables.
+
+
+    Autenticación HTTP
+    El protocolo HTTP, uno de los pilares de Internet y de la Web con mayúsculas, 
+    cuenta con función de autenticación básica de acceso Este método es más seguro 
+    si se implementa cifrado HTTPS con TLS, cada vez más frecuente en la mayoría 
+    de páginas y sitios web. En cualquier caso, este método de rastreo no suele ser muy frecuente
+
+    Sistemas de logueo
+
+    Las ventajas de usar un sistema de logueo es que con una sola cuenta de 
+    usuario tienes acceso personalizado a todas tus páginas y sitios web. Pero esto tiene 
+    una desventaja, y es que el responsable de esa cuenta única tiene información sobre a qué páginas 
+    entramos
+
+    JSON Web Tokens
+
+    Este paquete de información basado en JSON, un formato de texto sencillo escrito en JavaScript,
+    se utiliza inicialmente para crear tokens de acceso, de manera que el servidor web le dice al usuario
+    qué privilegios tiene o quién es.
+    A diferencia de las cookies, asociadas a cada enlace que abrimos desde el navegador 
+    automáticamente, estos tokens tienen que añadirse en cada petición de acceso por
+    parte de la página web a la que accedemos.
+
+La tendencia es usar las cookies cada vez menos debido a la falta de seguridad aunque podemos 
+
+8. Busque en internet qué es el protocolo HTTPS. Comente qué aporta este protocolo con
+respecto al uso de las cookies.
+
+    El Protocolo seguro de transferencia de hipertexto (en inglés, Hypertext Transfer Protocol Secure o HTTPS) 
+    es un protocolo de aplicación basado en el protocolo HTTP, 
+    destinado a la transferencia segura de datos de hipertexto, es decir, es la versión segura de HTTP
+
+    Una cookie segura sólo se envía al servidor con una petición cifrada sobre el protocolo HTTPS. 
+    Incluso con la directiva Secure, no debería almacenarse nunca información sensible en la cookies, ya que son 
+    inherentemente inseguras y este flag no puede ofrecer protección real. 
+    A partir de Chrome 52 y Firefox 52, los sitios inseguros (http:) no pueden establecer cookies con la directiva Secure.
+
+    Para prevenir ataques cross-site scripting (XSS), las cookies HttpOnly son inaccesibles desde la API
+    de Javascript Document.cookie; Solamente se envían al servidor. Por ejemplo, las cookies que persisten
+    sesiones del lado del servidor no necesitan estar disponibles para JavaScript, por lo que debería establecerse 
+    el flag HttpOnly.
+
+
+9. ¿Por qué últimamente todas las web nos piden permiso para utilizar cookies?
+
+    Según la Directivade Privacidad y Comunicaciones electrónicas europea ePrivacy, 
+    vigente desde 2002, coloquialmente conocida como “ley de cookies”, solo se permite
+    la instalación de estos archivos si el usuario ha proporcionado su consentimiento 
+    expreso. En la práctica, sin embargo, se han popularizado formas no expresas de consentimiento 
+    (opt out) que una reciente sentencia del TJUE ha considerado inválidas, al menos, 
+    en el caso de las cookies de seguimiento.
+
+
+
+Documentacion:
+https://rua.ua.es/dspace/bitstream/10045/69808/7/7-Algunos-de-los-problemas-que-ocasionan-las-Cookies.pdf
+https://blogthinkbig.com/alternativas-cookies-rastreo-internet
+https://es.wikipedia.org/wiki/Protocolo_seguro_de_transferencia_de_hipertexto
+https://developer.mozilla.org/es/docs/Web/HTTP/Cookies
+https://www.ionos.es/digitalguide/paginas-web/derecho-digital/la-ley-de-cookies-y-su-aplicacion-en-espana/

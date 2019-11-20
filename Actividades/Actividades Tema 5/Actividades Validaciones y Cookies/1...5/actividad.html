@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="script.js" type="text/javascript" defer></script>
+    <script src="cookie.js" charset="utf-8"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2>Formulario</h2>
+    <p id="ins"></p>
+    <form id="formu" action="" method="get">
+        <p>
+            <label for="DNI">DNI:</label>
+            <input type="text" name="DNI" id="DNI">
+            (Formato Valido:99.999.999-X)
+        </p>
+        <p>
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="Nombre" id="nombre">
+            (Introduzca al menos un
+            nombre y un apellido. Max 2 nombres y 2 apellidos)
+        </p>
+        <p>
+            <label for="fnac">F.Nac.:</label>
+            <input type="text" name="Fecha de Nacimiento" id="fnac">
+            (Formato Valido:dd/mm/yyyy)
+        </p>
+        <p>
+            <label for="hijos">N. hijos:</label>
+            <input type="number" id="hijos" name="N. hijos" required>
+        </p>
+        <p>
+            <label for="email">E-mail:</label>
+            <input type="email" name="E-mail" id="email">
+            (xxx@yyy.zzz)
+        </p>
+        <p>
+            <label for="pweb">Pag. Web:</label>
+            <input type="text" name="Pagina Web" id="pweb">
+            (Formato Valido:
+            http://www.xxxx.yyy)
+        </p>
+        <p>
+            <label for="con1">Contraseña:</label>
+            <input type="password" name="Contraseña 1" id="con1">
+            (Debe contener
+            entre 8 y 10
+            caracteres)
+        </p>
+        <p>
+            <label for="con2">Confirmar Contraseña:</label>
+            <input type="password" name="Contraseña 2" id="con2"> (Debe
+            coincidir con la contraseña de arriba)
+        </p>
+        <br>
+        <input type="button" id="guardar" value="Guardar">
+        <input type="button" id="ver" value="Ver contraseñas">
+        <br>
+        <h3>COOKIES</h3>
+        <button id="verCookie" type="button">Ver una</button>
+        <button id="verTodas" type="button">Ver todas</button>
+        <button id="eliminar" type="button">Eliminar una</button>
+        <button id="eliminarTodas" type="button">Eliminar todas</button>
+    </form>
+</body>
+
+</html>
