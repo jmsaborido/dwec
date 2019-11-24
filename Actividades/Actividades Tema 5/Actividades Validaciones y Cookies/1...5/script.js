@@ -11,7 +11,6 @@
 // página.
 
 window.onload = () => {
-
     var contador = getCookie("contador");
     ++contador;
     setCookie("contador", contador);
@@ -20,7 +19,7 @@ window.onload = () => {
     var reg = [
         /^\d{2}\.\d{3}\.\d{3}-[TRWAGMYFPDXBNJZSQVHLCKE]$/i,
         /^[a-zñáéíóú]+( [a-zñáéíóú]+){1,3}$/i,
-        /^(0[1-9])|([12][0-9])|(3[01])\/(0[1-9])|(1[0-2])\/\d{4}$/i,
+        /^(0?[1-9]|[12][0-9]|3[01])[\/\-](0?[1-9]|1[012])[\/\-]\d{4}$/i,
         /^[0-9]|(10)$/,
         /[a-zñáéíóú][a-zñáéíóú0-9]+@[a-zñáéíóú]+\.[a-zñáéíóú]+/i,
         /http:\/\/www\.[a-zñáéíóú0-9]+\.[a-zñáéíóú0-9]/i,
@@ -40,9 +39,10 @@ window.onload = () => {
     var pass = elem[reg.length - 2]
     var confPass = elem[reg.length - 1]
     for (let i = 0; i < reg.length; i++) {
+        elem[i].setCustomValidity(`El campo ${elem[i].name} esta mal formado. El formato es ${place[i]} `)
         elem[i].addEventListener("change", () => {
-            if (!reg[i].test(elem[i].value)) {
-                alert(`El campo ${elem[i].name} esta mal formado. El formato es ${place[i]} `)
+            if (elem[i].validity.patternMismatch) {
+                alert(elem[i].validationMessage)
                 elem[i].value = "";
             }
         })
@@ -59,7 +59,7 @@ window.onload = () => {
             if (reg[i].test(elem[i].value)) {
                 setCookie(elem[i].name, elem[i].value);
             } else {
-                alert(`El campo ${elem[i].name} esta mal formado. El formato es ${place[i]} `)
+                alert(elem[i].validationMessage)
                 break
             }
         }
@@ -74,7 +74,8 @@ window.onload = () => {
     document.getElementById("verTodas").addEventListener('click', () => {
         var txt = "";
         for (let i = 0; i < reg.length; i++) {
-            txt += `Cookie Numero ${i}: ${elem[i].name} ---> ${getCookie(elem[i].name)} \n`
+            txt += `Cookie Numero ${i}: ${elem[i].name} -- -> ${getCookie(elem[i].name)
+                } \n`
         }
         alert(txt)
     });

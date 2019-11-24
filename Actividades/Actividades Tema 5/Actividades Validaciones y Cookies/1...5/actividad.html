@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <script src="script.js" type="text/javascript" defer></script>
-    <script src="cookie.js" charset="utf-8"></script>
+    <script src="script.js" defer></script>
+    <script src="cookie.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -15,48 +15,52 @@
 <body>
     <h2>Formulario</h2>
     <p id="ins"></p>
-    <form id="formu" action="" method="get">
+    <form id="formu" method="get">
         <p>
             <label for="DNI">DNI:</label>
-            <input type="text" name="DNI" id="DNI">
-            (Formato Valido:99.999.999-X)
-        </p>
+            <input type="text" name="DNI" id="DNI" pattern="\d{2}\.\d{3}\.\d{3}-[TRWAGMYFPDXBNJZSQVHLCKE]"
+                required>(Formato
+            Valido:99.999.999-X) </p>
         <p>
             <label for="nombre">Nombre:</label>
-            <input type="text" name="Nombre" id="nombre">
+            <input type="text" name="Nombre" id="nombre"
+                pattern="([a-zñáéíóú]|[A-ZÑÁÉÍÓÚ])+( ([a-zñáéíóú]|[A-ZÑÁÉÍÓÚ]+){1,3}" required>
             (Introduzca al menos un
             nombre y un apellido. Max 2 nombres y 2 apellidos)
         </p>
         <p>
             <label for="fnac">F.Nac.:</label>
-            <input type="text" name="Fecha de Nacimiento" id="fnac">
+            <input type="text" name="Fecha de Nacimiento" id="fnac"
+                pattern="^(0?[1-9]|[12][0-9]|3[01])[\/\-](0?[1-9]|1[012])[\/\-]\d{4}$" required>
             (Formato Valido:dd/mm/yyyy)
         </p>
         <p>
             <label for="hijos">N. hijos:</label>
-            <input type="number" id="hijos" name="N. hijos" required>
+            <input type="number" id="hijos" name="N. hijos" min="0" max="10" required>
         </p>
         <p>
             <label for="email">E-mail:</label>
-            <input type="email" name="E-mail" id="email">
+            <input type="email" name="E-mail" id="email" pattern="[a-zñáéíóú][a-zñáéíóú0-9]+@[a-zñáéíóú]+\.[a-zñáéíóú]+"
+                required>
             (xxx@yyy.zzz)
         </p>
         <p>
             <label for="pweb">Pag. Web:</label>
-            <input type="text" name="Pagina Web" id="pweb">
+            <input type="url" name="Pagina Web" id="pweb" pattern="http://www\.[a-zñáéíóú0-9]+\.[a-zñáéíóú0-9]{1-6}"
+                required>
             (Formato Valido:
             http://www.xxxx.yyy)
         </p>
         <p>
             <label for="con1">Contraseña:</label>
-            <input type="password" name="Contraseña 1" id="con1">
+            <input type="password" name="Contraseña 1" id="con1" pattern=".{8,10}">
             (Debe contener
             entre 8 y 10
             caracteres)
         </p>
         <p>
             <label for="con2">Confirmar Contraseña:</label>
-            <input type="password" name="Contraseña 2" id="con2"> (Debe
+            <input type="password" name="Contraseña 2" id="con2" pattern=".{8,10}"> (Debe
             coincidir con la contraseña de arriba)
         </p>
         <br>
