@@ -1,0 +1,17 @@
+body {
+    font-family: 'Roboto Slab', serif;
+    color: #f0f0f0;
+    background-color: #121212;
+}
+
+a {
+    color: red;
+}
+
+p {
+    color: blue;
+}
+
+.visitado {
+    color: green;
+}
