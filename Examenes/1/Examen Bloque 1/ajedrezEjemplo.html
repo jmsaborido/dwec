@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ajedrez</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <main id="tablero">
+        <div id="fila1">
+            <div class="celda">05</div>
+            <div class="celda">00</div>
+            <div class="celda"></div>
+            <div class="celda">a</div>
+            <div class="celda">b</div>
+            <div class="celda">c</div>
+            <div class="celda">d</div>
+            <div class="celda">e</div>
+            <div class="celda">f</div>
+            <div class="celda">g</div>
+            <div class="celda">h</div>
+            <div class="celda"></div>
+            <div class="celda roja"><span>05</span></div>
+            <div class="celda roja"><span>00</span></div>
+        </div>
+        <div id="fila2">
+            <div id="negras1" class="celda blanca">
+                
+            </div>
+            <div id="negras2" class="celda blanca">
+                
+            </div>
+            <div class="celda">
+                8
+            </div>
+            <div id="a8" class="celda blanca">
+                <span id="torre_negra_1">&#9820;</span>
+            </div>
+            <div id="b8" class="celda negra">
+                <span id="caballo_negro_1">&#9822;</span>
+            </div>
+            <div id="c8" class="celda blanca">
+                <span id="alfil_negro_1">&#9821;</span>
+            </div>
+            <div id="d8" class="celda negra">
+                <span id="reina_negra_1">&#9819;</span>
+            </div>
+            <div id="e8" class="celda blanca">
+                <span id="rey_negro">&#9818;</span>
+            </div>
+            <div id="f8" class="celda negra">
+                <span id="alfil_negro_2">&#9821;</span>
+            </div>
+            <div id="g8" class="celda blanca">
+                <span id="caballo_negro_2">&#9822;</span>
+            </div>
+            <div id="h8" class="celda negra">
+                <span id="torre_negra_2">&#9820;</span>        
+            </div>
+            <div class="celda">
+                8
+            </div>
+            <div id="blancas1" class="celda negra">
+                            
+            </div>
+            <div id="blancas2" class="celda negra">
+                            
+            </div>
+        </div>
+        <div id="fila3">
+            <div id="negras3" class="celda blanca">
+                
+            </div>
+            <div id="negras4" class="celda blanca">
+                        
+            </div>
+            <div class="celda">
+                7
+            </div>
+            <div id="a7" class="celda negra">
+                <span id="peon_negro_1">&#9823;</span>
+            </div>
+            <div id="b7" class="celda blanca">
+                <span id="peon_negro_2">&#9823;</span>
+            </div>
+            <div id="c7" class="celda negra">
+                <span id="peon_negro_3">&#9823;</span>
+            </div>
+            <div id="d7" class="celda blanca">
+                <span id="peon_negro_4">&#9823;</span>
+            </div>
+            <div id="e7" class="celda negra">
+                <span id="peon_negro_5">&#9823;</span>
+            </div>
+            <div id="f7" class="celda blanca">
+                <span id="peon_negro_6">&#9823;</span>
+            </div>
+            <div id="g7" class="celda negra">
+                <span id="peon_negro_7">&#9823;</span>
+            </div>
+            <div id="h7" class="celda blanca">
+                <span id="peon_negro_8">&#9823;</span>        
+            </div>
+            <div class="celda">
+                7
+            </div>   
+            <div id="blancas3" class="celda negra">
+                            
+            </div>
+            <div id="blancas4" class="celda negra">
+                                
+            </div>         
+        </div>
+        <div id="fila4">
+            <div id="negras5" class="celda blanca">
+                
+            </div>
+            <div id="negras6" class="celda blanca">
+                                
+            </div>
+            <div class="celda">
+                6
+            </div>
+            <div id="a6" class="celda blanca">
+                
+            </div>
+            <div id="b6" class="celda negra">
+                
+            </div>
+            <div id="c6" class="celda blanca">
+
+            </div>
+            <div id="d6" class="celda negra">
+
+            </div>
+            <div id="e6" class="celda blanca">
+
+            </div>
+            <div id="f6" class="celda negra">
+
+            </div>
+            <div id="g6" class="celda blanca">
+
+            </div>
+            <div id="h6" class="celda negra">
+
+            </div>
+            <div class="celda">
+                6
+            </div>      
+            <div id="blancas5" class="celda negra">
+                            
+            </div>
+            <div id="blancas6" class="celda negra">
+                                    
+            </div>           
+        </div>
+        <div id="fila5">
+            <div id="negras7" class="celda blanca">
+                
+            </div>
+            <div id="negras8" class="celda blanca">
+                                        
+            </div>
+            <div class="celda">
+                5
+            </div>
+            <div id="a5" class="celda negra">
+                    
+            </div>
+            <div id="b5" class="celda blanca">
+    
+            </div>
+            <div id="c5" class="celda negra">
+    
+            </div>
+            <div id="d5" class="celda blanca">
+    
+            </div>
+            <div id="e5" class="celda negra">
+    
+            </div>
+            <div id="f5" class="celda blanca">
+    
+            </div>
+            <div id="g5" class="celda negra">
+    
+            </div>
+            <div id="h5" class="celda blanca">
+                    
+            </div>
+            <div class="celda">
+                5
+            </div>     
+            <div id="blancas7" class="celda negra">
+                            
+            </div>
+            <div id="blancas8" class="celda negra">
+                                        
+            </div>          
+        </div>
+        <div id="fila6">
+            <div id="negras9" class="celda blanca">
+                
+            </div>
+            <div id="negras10" class="celda blanca">
+                                                
+            </div>
+            <div class="celda">
+                4
+            </div>
+            <div id="a4" class="celda blanca">
+                    
+            </div>
+            <div id="b4" class="celda negra">
+                    
+            </div>
+            <div id="c4" class="celda blanca">
+    
+            </div>
+            <div id="d4" class="celda negra">
+    
+            </div>
+            <div id="e4" class="celda blanca">
+    
+            </div>
+            <div id="f4" class="celda negra">
+    
+            </div>
+            <div id="g4" class="celda blanca">
+    
+            </div>
+            <div id="h4" class="celda negra">
+    
+            </div>
+            <div class="celda">
+                4
+            </div>      
+            <div id="blancas9" class="celda negra">
+                            
+            </div>
+            <div id="blancas10" class="celda negra">
+                                            
+            </div>        
+        </div>
+        <div id="fila7">
+            <div id="negras11" class="celda blanca">
+                
+            </div>
+            <div id="negras12" class="celda blanca">
+                                                        
+            </div>
+            <div class="celda">
+                3
+            </div>
+            <div id="a3" class="celda negra">
+                        
+            </div>
+            <div id="b3" class="celda blanca">
+        
+            </div>
+            <div id="c3" class="celda negra">
+        
+            </div>
+            <div id="d3" class="celda blanca">
+        
+            </div>
+            <div id="e3" class="celda negra">
+        
+            </div>
+            <div id="f3" class="celda blanca">
+        
+            </div>
+            <div id="g3" class="celda negra">
+        
+            </div>
+            <div id="h3" class="celda blanca">
+                        
+            </div>
+            <div class="celda">
+                3
+            </div>   
+            <div id="blancas11" class="celda negra">
+                            
+            </div>
+            <div id="blancas12" class="celda negra">
+                                                
+            </div>          
+        </div>
+        <div id="fila8">
+            <div id="negras13" class="celda blanca">
+                
+            </div>
+            <div id="negras14" class="celda blanca">
+                                                                
+            </div>
+            <div class="celda">
+                2
+            </div>
+            <div id="a2" class="celda blanca">
+                <span id="peon_blanco_1">&#9817;</span>
+            </div>
+            <div id="b2" class="celda negra">
+                <span id="peon_blanco_2">&#9817;</span>
+            </div>
+            <div id="c2" class="celda blanca">
+                <span id="peon_blanco_3">&#9817;</span>
+            </div>
+            <div id="d2" class="celda negra">
+                <span id="peon_blanco_4">&#9817;</span>
+            </div>
+            <div id="e2" class="celda blanca">
+                <span id="peon_blanco_5">&#9817;</span>
+            </div>
+            <div id="f2" class="celda negra">
+                <span id="peon_blanco_6">&#9817;</span>
+            </div>
+            <div id="g2" class="celda blanca">
+                <span id="peon_blanco_7">&#9817;</span>        
+            </div>
+            <div id="h2" class="celda negra">
+                <span id="peon_blanco_8">&#9817;</span>
+            </div>
+            <div class="celda">
+                2
+            </div>    
+            <div id="blancas13" class="celda negra">
+                            
+            </div>
+            <div id="blancas14" class="celda negra">
+                                                    
+            </div>          
+        </div>
+        <div id="fila9">
+            <div id="negras15" class="celda blanca">
+                
+            </div>
+            <div id="negras16" class="celda blanca">
+                                                                        
+            </div>
+            <div class="celda">
+                1
+            </div>
+            <div id="a1" class="celda negra">
+                <span id="torre_blanca_1">&#9814;</span>
+            </div>
+            <div id="b1" class="celda blanca">
+                <span id="caballo_blanco_1">&#9816;</span>
+            </div>
+            <div id="c1" class="celda negra">
+                <span id="alfil_blanco_1">&#9815;</span>
+            </div>
+            <div id="d1" class="celda blanca">
+                <span id="reina_blanca_1">&#9813;</span>
+            </div>
+            <div id="e1" class="celda negra">
+                <span id="rey_blanco">&#9812;</span>
+            </div>
+            <div id="f1" class="celda blanca">
+                <span id="alfil_blanco_2">&#9815;</span>
+            </div>
+            <div id="g1" class="celda negra">
+                <span id="caballo_blanco_2">&#9816;</span>        
+            </div>
+            <div id="h1" class="celda blanca">
+                <span id="torre_blanca_2">&#9814;</span>
+            </div>
+            <div class="celda">
+                1
+            </div>
+            <div id="blancas15" class="celda negra">
+                            
+            </div>
+            <div id="blancas16" class="celda negra">
+                                                        
+            </div>  
+        </div>
+        <div id="fila10">
+            <div class="celda"></div>
+            <div class="celda"></div>
+            <div class="celda"></div>
+            <div class="celda">a</div>
+            <div class="celda">b</div>
+            <div class="celda">c</div>
+            <div class="celda">d</div>
+            <div class="celda">e</div>
+            <div class="celda">f</div>
+            <div class="celda">g</div>
+            <div class="celda">h</div>
+            <div class="celda"></div>
+            <div class="celda"></div>
+            <div class="celda"></div>
+        </div>
+    </main>
+</body>
+</html>

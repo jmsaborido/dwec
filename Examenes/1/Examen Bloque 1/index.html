@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ajedrez: Control de partida</title>
+    <script src="./js/app.js" defer></script>
+</head>
+
+<body>
+    <form method="POST">
+        <fieldset>
+            <legend>Configuración de partida</legend>
+            <label for="tiempo">Tiempo del que dispone cada jugador [mm:ss]:</label>
+            <input id="minutos" name="tiempo" type="number" min="0" max="59">
+            <input id="segundos" name="tiempo" type="number" min="00" max="59">
+        </fieldset>
+        <fieldset>
+            <legend>Acta de la partida</legend>
+            <label for="email">Introduce el e-mail al que enviar el acta:</label>
+            <input type="email" name="email" id="email" size="46"> <br>
+            <label for="mensaje">Mensaje:</label> <br>
+            <textarea name="mensaje" id="mensaje" cols="75" rows="5"></textarea>
+        </fieldset>
+        <br>
+        <input id="send" type="button" value="Enviar acta">
+        <input id="reset" type="reset" value="reset">
+        <input id="jugar" type="button" value="Jugar partida">
+    </form>
+</body>
+
+</html>
