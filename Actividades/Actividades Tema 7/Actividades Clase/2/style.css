@@ -1,0 +1,19 @@
+body {
+    font-family: 'Roboto Slab', serif;
+    color: #f0f0f0;
+    background-color: #121212;
+}
+
+#anchura {
+    font-size: 150%;
+}
+
+#hola {
+    padding: 150px;
+    color: blueviolet;
+}
+
+#tamaño button {
+    margin-top: 100px;
+    margin-left: 50px;
+}

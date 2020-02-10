@@ -1,0 +1,13 @@
+body {
+    font-family: 'Roboto Slab', serif;
+    color: #f0f0f0;
+    background-color: #121212;
+}
+
+label {
+    display: block;
+}
+
+span {
+    color: red;
+}
